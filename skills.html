@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for additional styling */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #adb5bd;
+    }
+    .jumbotron {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 100px 0;
+      margin-bottom: 0;
+    }
+    .skills-section {
+      padding: 50px 0;
+      background-color: #ffffff;
+    }
+    .skill {
+      margin-bottom: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .skill:hover {
+      transform: scale(1.05);
+    }
+    .skill-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .skill-icon {
+      font-size: 40px;
+      margin-right: 20px;
+    }
+    .skill-details {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="secondpage.html">my work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about me.html">about me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="journal.html">journal</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="martial arts.html">martial arts</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="jumbotron text-center">
+  <div class="container">
+    <h1>Skills</h1>
+    <p>I am a passionate and dedicated individual with a strong desire to learn and grow.</p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-primary">
+            <i class="fas fa-chart-line skill-icon"></i>
+            <div class="skill-details">
+              <h3>Persistence</h3>
+              <p>The ability to continue striving towards a goal despite facing challenges, setbacks, or failures.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-secondary">
+            <i class="fas fa-users skill-icon"></i>
+            <div class="skill-details">
+              <h3>Teamwork</h3>
+              <p>The ability to collaborate and work effectively with others towards a common goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-success">
+            <i class="fas fa-atom skill-icon"></i>
+            <div class="skill-details">
+              <h3>Problem-Solving</h3>
+              <p>The ability to identify, analyze, and solve problems effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-danger">
+            <i class="fas fa-landmark skill-icon"></i>
+            <div class="skill-details">
+              <h3>Leadership</h3>
+              <p>The ability to inspire, motivate, and guide others towards a common goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-warning">
+            <i class="fas fa-stopwatch skill-icon"></i>
+            <div class="skill-details">
+              <h3>Time Management</h3>
+              <p>The ability to prioritize tasks, allocate time efficiently, and effectively utilize available resources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-info">
+            <i class="fas fa-people-arrows skill-icon"></i>
+            <div class="skill-details">
+              <h3>Adaptability</h3>
+              <p>The capacity to adjust and thrive in different situations or environments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-violet">
+            <i class="fas fa-comments skill-icon"></i>
+            <div class="skill-details">
+              <h3>Communication Skills</h3>
+              <p>The ability to convey information clearly and effectively, both verbally and non-verbally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-primary">
+            <i class="fas fa-lightbulb skill-icon"></i>
+            <div class="skill-details">
+              <h3>Creativity</h3>
+              <p>The ability to think outside the box, generate innovative ideas, and approach tasks or problems from new perspectives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-secondary">
+            <i class="fas fa-users-cog skill-icon"></i>
+            <div class="skill-details">
+              <h3>Teamwork</h3>
+              <p>The ability to collaborate and work effectively with others towards a common goal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-success">
+            <i class="fas fa-heartbeat skill-icon"></i>
+            <div class="skill-details">
+              <h3>Resilience</h3>
+              <p>The capacity to bounce back from adversity, challenges, or setbacks.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-danger">
+            <i class="fas fa-microscope skill-icon"></i>
+            <div class="skill-details">
+              <h3>Attention to Detail</h3>
+              <p>The ability to notice and focus on small aspects of tasks or projects, ensuring accuracy and precision.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-warning">
+            <i class="fas fa-money-bill-wave skill-icon"></i>
+            <div class="skill-details">
+              <h3>Financial Literacy</h3>
+              <p>Understanding basic financial concepts such as budgeting, saving, investing, and managing personal finances.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-info">
+            <i class="fas fa-network-wired skill-icon"></i>
+            <div class="skill-details">
+              <h3>Networking</h3>
+              <p>Building and maintaining relationships with others in your industry or field.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-yellow">
+            <i class="fas fa-handshake-alt-slash skill-icon"></i>
+            <div class="skill-details">
+              <h3>Negotiation</h3>
+              <p>Reaching mutually beneficial agreements in various situations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-primary">
+            <i class="fas fa-laptop-code skill-icon"></i>
+            <div class="skill-details">
+              <h3>Technical Skills</h3>
+              <p>Proficiency in specific tools, software, or technologies relevant to your field.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-secondary">
+            <i class="fas fa-microphone skill-icon"></i>
+            <div class="skill-details">
+              <h3>Public Speaking</h3>
+              <p>Confidently and effectively addressing an audience.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-success">
+            <i class="fas fa-brain skill-icon"></i>
+            <div class="skill-details">
+              <h3>Emotional Intelligence</h3>
+              <p>Recognizing, understanding, and managing emotions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-danger">
+            <i class="fas fa-tasks skill-icon"></i>
+            <div class="skill-details">
+              <h3>Project Management</h3>
+              <p>Planning, organizing, and overseeing tasks and resources to achieve specific goals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-warning">
+            <i class="fas fa-globe skill-icon"></i>
+            <div class="skill-details">
+              <h3>Cultural Competence</h3>
+              <p>Understanding and respecting cultural differences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-info">
+            <i class="fas fa-search skill-icon"></i>
+            <div class="skill-details">
+              <h3>Research Skills</h3>
+              <p>Gathering, analyzing, and evaluating information from various sources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the structure for other skills -->
+    </div>
+  </div>
+</section>
+
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

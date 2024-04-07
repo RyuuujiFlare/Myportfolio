@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Added font awesome for hamburger icon -->
+    <style>
+        body {
+            background-image: url('https://www.icegif.com/wp-content/uploads/2021/10/icegif-1642.gif');
+            background-attachment: fixed;
+            background-size: contain; 
+            background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .parallax {
+            background-image: url('https://image.tensorartassets.com/posts/images/648329703060598002/83349338-2bb0-414e-89ff-79db8bad04c0.gif');
+            background-attachment: fixed;
+            background-size: contain; 
+            background-position: center;
+            height: 100vh; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start; 
+            padding-left: 20px;
+            color: #fff;
+            text-align: left; 
+        }
+        .image-container img {
+            transition: transform 0.3s ease;
+        }
+        .image-container img:hover {
+            transform: scale(1.1);
+        }
+        
+        .pie-chart-section {
+            align-items: flex-start;
+            background-color: rgba(13, 0, 0, 0.7);
+            padding: 50px 20px; 
+            margin-left: 20px; /* Added margin-left for spacing */
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .burger-menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .burger-line {
+            width: 100%;
+            height: 3px;
+            background-color: rgb(244, 244, 244);
+        }
+
+        .menu-items {
+            display: none;
+            flex-direction: column; /* Make menu items vertical */
+            list-style-type: none;
+            padding: 0; /* Remove default padding */
+            position: absolute;
+            top: 50px; /* Adjust position */
+            left: 0;
+          
+            padding: 10px;
+            width: 100%; /* Make menu full width */
+            z-index: 1; /* Ensure menu appears above other content */
+        }
+
+        .menu-items.show {
+            display: flex; /* Show the menu items when 'show' class is added */
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .active {
+            color: white;
+        }
+        .carousel-item img {
+            max-width: 25%; /* Set maximum width to 100% */
+            height: auto; /* Maintain aspect ratio */
+            margin: 0 auto; /* Center the images horizontally */
+        }
+        .carousel-container {
+            margin-top: 50px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+ <div class="navbar">
+  <div class="burger-menu">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+  </div>
+  <ul class="menu-items">
+    <li><a href="secondpage.html">my work</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="about me.html">About me</a></li>
+    <li><a href="journal.html">journal</a></li>
+    <li><a href="martial arts.html">martial arts</a></li>
+  </ul>
+</div>
+
+<div class="parallax">
+    <h1>Dragons den</h1>
+    <p>ipsum dolor</p>
+</div>
+
+<div class="carousel-container">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mb-4"></h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    </ol>
+                    <div class="carousel-item active">
+                        <a href="secondpage.html">
+                            <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFnUVaRj2-GO6BXECVLzc0b3uJen9suOvdQcglfjmYIQ&s" alt="First slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="skills.html">
+                            <img class="d-block w-100" src="https://elearningindustry.com/wp-content/uploads/2019/10/7-Benefits-That-Highlight-The-Importance-Of-Soft-Skills-In-The-Workplace.png" alt="Second slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="about me.html">
+                            <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzvV5XnC7kHa3RNAMqCc_a1W78I1evKlRBYOny4O_Jg&s" alt="Third slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="journal.html">
+                            <img class="d-block w-100" src="https://www.baronnews.com/wp-content/uploads/2019/03/bulletjournal.jpg" alt="fourth slide">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="martial arts.html">
+                            <img class="d-block w-100" src="https://t3.ftcdn.net/jpg/05/89/61/24/360_F_589612437_CjpkeO3pyFC9AEXrmYynS0awhPajxaYt.jpg" alt="Fifth slide">
+                        </a>
+                    </div>
+                    
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 pie-chart-section"> <!-- Removed 'offset-md-3' class -->
+            <h2 class="text-center mb-4">Skills</h2>
+            <canvas id="myPieChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const burgerMenu = document.querySelector('.burger-menu');
+  const menuItems = document.querySelector('.menu-items');
+
+  // Function to toggle menu items visibility
+  function toggleMenu() {
+    menuItems.classList.toggle('show');
+  }
+
+  // Event listener for mobile screens (burger menu click)
+  burgerMenu.addEventListener('click', toggleMenu);
+
+  // Event listener for desktop screens (window resize)
+  window.addEventListener('resize', function() {
+    // Check if the window width is greater than 768px (desktop)
+    if (window.innerWidth > 768) {
+      // Hide menu items
+      menuItems.classList.remove('show');
+    }
+  });
+
+  // Pie chart data
+  var ctx = document.getElementById('myPieChart').getContext('2d');
+var data = {
+    labels: ['Persistence', 'Agility', 'Problem-Solving', 'Leadership', 'Time Management', 'Adaptability', 'Communication Skills', 'Creativity', 'Teamwork', 'Resilience', 'Attention to Detail', 'Financial Literacy', 'Networking', 'Negotiation', 'Technical Skills', 'Public Speaking', 'Emotional Intelligence', 'Project Management', 'Cultural Competence', 'Research Skills'],
+    datasets: [{
+        data: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], 
+        backgroundColor: ['red', 'blue', 'yellow', 'green', 'orange', 'purple', 'gray', 'cyan', 'magenta', 'pink', 'brown', 'teal', 'lime', 'indigo', 'salmon', 'olive', 'maroon', 'navy', 'azure', 'lavender'] 
+    }]
+};
+
+var myPieChart = new Chart(ctx, {
+    type: 'pie',
+    data: data,
+    options: {
+        responsive: true,
+        legend: {
+            position: 'right'
+        }
+    }
+});
+
+});
+</script>
+
+</body>
+</html>
+    
