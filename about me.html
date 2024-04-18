@@ -15,36 +15,32 @@
       background-color: #000;
       color: #fff;
     }
-
     #profile-pic {
       width: 600px; /* Adjust width as needed */
       border-radius: 50%;
     }
-
     .description {
       font-size: 18px;
       line-height: 1.6;
       font-weight: bold;
     }
-
     .navbar {
       background-color: #000 !important;
     }
-
     .navbar-brand {
       color: #ffc107 !important;
     }
-
     .navbar-brand:hover {
       color: #f8b400 !important;
     }
-
     .navbar-nav .nav-link {
       color: #fff !important;
     }
-
     .navbar-nav .nav-link:hover {
       color: #ccc !important;
+    }
+    #dynamic-text {
+      font-weight: bold;
     }
   </style>
 </head>
@@ -70,9 +66,7 @@
           <li class="nav-item">
             <a class="nav-link" href="journal.html">journal</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="martial arts.html">martial arts</a>
-          </li>
+          
         </ul>
       </div>
     </div>
@@ -86,6 +80,7 @@
       </div>
       <div class="col-md-6">
         <h1 style="color: #ffd700;">Hi! I'm Numer Jan T. Bande</h1>
+        <p id="intro-text"><span id="dynamic-text"></span></p>
         <p class="description">I am a multi-faceted individual, adept in the art of life. A martial arts maestro, a code-weaving gamer, a symbol of athleticism. An aficionado of anime, manga, manhwa, and manhua. Kind-hearted yet keen, an analytical mind wrapped in compassion. A relentless combination of hard work and work smarter.</p>
       </div>
     </div>
@@ -97,9 +92,9 @@
       <div class="row">
         <div class="col-md-6">
           <ul class="list-inline">
-            <li class="list-inline-item"><a href="https://www.facebook.com/dracomerz?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.facebook.com/profile.php?id=100079307332296"><i class="fab fa-facebook"></i></a></li>
             <li class="list-inline-item"><a href="https://twitter.com/RyeJan123"><i class="fab fa-twitter"></i></a></li>
-            <li class="list-inline-item"><a href="https://www.instagram.com/numertorres/"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/numertorres/"><i the="fab fa-instagram"></i></a></li>
             <li class="list-inline-item"><a href="https://www.linkedin.com/in/rye-jan-3b2974302/"><i class="fab fa-linkedin"></i></a></li>
           </ul>
         </div>
@@ -107,12 +102,47 @@
           <p>Contact: 09606824331</p>
           <p>gmail:ryuujiflare@gmail.com</p>
           <p>Address:Imus cavite</p>
-        </div>
+        </div
       </div>
     </div>
+  </div>
+  <script>
+    const words = ["I'm a Gamer", "I'm a Web Developer", "I'm a Game Developer", "I'm a Hustler", "I'm a    Crypto Trader"];
+    const colors = ['#FF5733', '#C70039', '#900C3F', '#581845', '#FFC300'];
+    let currentWordIndex = 0;
+    
+    function typeWriter() {
+      const dynamicText = document.getElementById('dynamic-text');
+      if (currentWordIndex < words.length) {
+        dynamicText.innerHTML = '';  // Clear the current text
+        dynamicText.style.color = colors[currentWordIndex % colors.length]; // Set color
+        let word = words[currentWordIndex];
+        let currentLetterIndex = 0;
+        
+        function typeLetter() {
+          if (currentLetterIndex < word.length) {
+            dynamicText.innerHTML += word.charAt(currentLetterIndex);
+            currentLetterIndex++;
+            setTimeout(typeLetter, 150); // Speed of typing each letter
+          } else {
+            setTimeout(() => {
+              currentWordIndex++;  // Move to the next word
+              typeWriter();  // Restart typing process
+            }, 1000); // Wait time before starting the next word
+          }
+        }
+        
+        typeLetter();
+      }
+    }
+  
+    document.addEventListener('DOMContentLoaded', typeWriter); // Start the typewriter effect after DOM is loaded
+  </script>
+  
+  
   </footer>
 
-  <!-- Bootstrap JS -->
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
