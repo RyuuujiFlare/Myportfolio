@@ -1,5 +1,228 @@
- <!-- Day Trader Skill -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      background-color: #343a40;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #ffffff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #adb5bd;
+    }
+    .jumbotron {
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 100px 0;
+      margin-bottom: 0;
+    }
+    .skills-section {
+      padding: 50px 0;
+      background-color: #ffffff;
+    }
+    .skill {
+      margin-bottom: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .skill:hover {
+      transform: scale(1.05);
+    }
+    .skill-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    .skill-icon {
+      font-size: 40px;
+      margin-right: 20px;
+    }
+    .skill-details {
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="secondpage.html">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="journal.html">Journal</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- About Section -->
+<section id="about" class="jumbotron text-center">
+  <div class="container">
+    <h1>Skills</h1>
+    <p>I am a passionate and dedicated individual with a strong desire to learn and grow.</p>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+    <div class="row">
+      <!-- Dynamically add skills here as shown above. A few examples are included. -->
+      <!-- Logical Thinking -->
       <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-primary">
+            <i class="fas fa-brain skill-icon"></i>
+            <div class="skill-details">
+              <h3>Logical Thinking</h3>
+              <p>Capability to reason, using clear and structured thought processes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Programming -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-secondary">
+            <i class="fas fa-code skill-icon"></i>
+            <div class="skill-details">
+              <h3>Programming</h3>
+              <p>Ability to write, test, and maintain code efficiently.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Problem-solving -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-success">
+            <i class="fas fa-puzzle-piece skill-icon"></i>
+            <div class="skill-details">
+              <h3>Problem-solving</h3>
+              <p>Proficient in identifying problems and finding effective solutions quickly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Kinesthetics -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-info">
+            <i class="fas fa-running skill-icon"></i>
+            <div class="skill-details">
+              <h3>Kinesthetics</h3>
+              <p>Understanding and utilizing body movements and mechanics effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Critical Thinking -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-danger">
+            <i class="fas fa-lightbulb skill-icon"></i>
+            <div class="skill-details">
+              <h3>Critical Thinking</h3>
+              <p>Ability to analyze facts to form a judgment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Adaptability -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-warning">
+            <i class="fas fa-water skill-icon"></i>
+            <div class="skill-details">
+              <h3>Adaptability</h3>
+              <p>Adjusting effectively to new conditions and environments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Flexibility -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-primary">
+            <i class="fas fa-yoga skill-icon"></i>
+            <div class="skill-details">
+              <h3>Flexibility</h3>
+              <p>Willingness and capability to adapt to changes with agility.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Emotional Intelligence -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-secondary">
+            <i class="fas fa-heart skill-icon"></i>
+            <div class="skill-details">
+              <h3>Emotional Intelligence</h3>
+              <p>Ability to understand, use, and manage my own emotions in positive ways.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Kinesthetic Sense -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-success">
+            <i class="fas fa-dumbbell skill-icon"></i>
+            <div class="skill-details">
+              <h3>Kinesthetic Sense</h3>
+              <p>Awareness of position and movement of body parts.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gaming Sense -->
+      <div class="col-md-4">
+        <div class="skill">
+          <div class="skill-container bg-info">
+            <i class="fas fa-gamepad skill-icon"></i>
+            <div class="skill-details">
+              <h3>Gaming Sense</h3>
+              <p>Acute intuition and understanding of game mechanics and player dynamics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- Day Trader Skill -->
+       <div class="col-md-4">
         <div class="skill">
           <div class="skill-container bg-danger">
             <i class="fas fa-chart-line skill-icon"></i>
@@ -23,3 +246,13 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
