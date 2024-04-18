@@ -3,56 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Added font awesome for hamburger icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            background-image: url('https://www.icegif.com/wp-content/uploads/2021/10/icegif-1642.gif');
-            background-attachment: fixed;
-            background-size: contain; 
-            background-position: center;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .parallax {
-            background-image: url('https://i.pinimg.com/originals/81/0d/5c/810d5cdeb076a65adfb24f9e78fa2d8b.gif');
-            background-attachment: fixed;
-            background-size: contain; 
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh; 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start; 
-            padding-left: 20px;
-            color: white;
-            text-align: left; 
-        }
-        .image-container img {
-            transition: transform 0.3s ease;
-        }
-        .image-container img:hover {
-            transform: scale(1.1);
-        }
-        .container{
-            Background-color:white;
-            color:red;
-        }
-        
+      
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        height: 100%;
+        width: 100%;
+        font-family: 'Arial', sans-serif;
+        background-image: url('https://i.pinimg.com/originals/c4/05/e5/c405e59f2114f36defe07f92a771d9a5.gif');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        scroll-behavior: smooth;
+    }
+
+    .parallax {
+        background-image: url('https://www.icegif.com/wp-content/uploads/2023/10/icegif-233.gif');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container, .container-fluid {
+        padding-right: 0;
+        padding-left: 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%; /* Ensure container is full width */
+    }
         .pie-chart-section {
             align-items: flex-start;
-            background-color: rgba(13, 0, 0, 0.7);
+            background-color: rgba(0, 0, 0, 0.7);
             padding: 50px 20px; 
-            margin-left: 20px; /* Added margin-left for spacing */
+            margin-left: 20px; 
+            color: aliceblue ;
         }
         
+
         .navbar {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 10px;
+            background-color: black;
         }
 
         .burger-menu {
@@ -62,6 +71,8 @@
             width: 30px;
             height: 20px;
             cursor: pointer;
+            position: relative; /* Ensure it doesn’t overflow */
+            z-index: 10
         }
 
         .burger-line {
@@ -80,8 +91,9 @@
             left: 0;
             color:white;
             padding: 10px;
-            width: 100%; /* Make menu full width */
-            z-index: 1; /* Ensure menu appears above other content */
+            width: 100%; 
+            z-index: 1; 
+            background: black; 
         }
 
         .menu-items.show {
@@ -93,47 +105,34 @@
             color: black;
         }
         
-        .active {
-            color: white;
-        }
         .carousel-item img {
             max-width: 25%; /* Set maximum width to 100% */
             height: auto; /* Maintain aspect ratio */
             margin: 0 auto; /* Center the images horizontally */
         }
-        .carousel-container {
-            margin-top: 50px; /* Adjust the margin as needed */
-        }
     </style>
 </head>
 <body>
- <div class="navbar">
-  <div class="burger-menu">
-    <div class="burger-line"></div>
-    <div class="burger-line"></div>
-    <div class="burger-line"></div>
-  </div>
-  <ul class="menu-items">
-    <li><a href="secondpage.html">my work</a></li>
-    <li><a href="skills.html">Skills</a></li>
-    <li><a href="about me.html">About me</a></li>
-    <li><a href="journal.html">journal</a></li>
-    <li><a href="martial arts.html">martial arts</a></li>
-  </ul>
-</div>
-<div class="container">
-<div class="parallax">
-    <h1>Dragons den</h1>
-    <p>
-Hello and welcome to my portfolio! I'm Numer(Ryuujin),
-a dedicated student passionate about Comsci. Here, you'll find a curated collection of my work,
-reflecting my enthusiasm for learning, creativity, and growth. Thank you for visiting, 
-and I hope you enjoy exploring my journey!
-</p>
-</div>
-</div>
+    <div class="navbar">
+        <div class="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+        <ul class="menu-items">
+            <li><a href="secondpage.html">My Work</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="about me.html">About Me</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            
+        </ul>
+    </div>
 
-<div class="carousel-container">
+        <div class="parallax">
+            <h1>Dragons Den</h1>
+            <p id="intro-text"></p>
+        
+    </div>
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
@@ -146,32 +145,29 @@ and I hope you enjoy exploring my journey!
                         <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                     </ol>
-                    <div class="carousel-item active">
-                        <a href="secondpage.html">
-                            <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFnUVaRj2-GO6BXECVLzc0b3uJen9suOvdQcglfjmYIQ&s" alt="First slide">
-                        </a>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="secondpage.html">
+                                <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFnUVaRj2-GO6BXECVLzc0b3uJen9suOvdQcglfjmYIQ&s" alt="First slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="skills.html">
+                                <img class="d-block w-100" src="https://elearningindustry.com/wp-content/uploads/2019/10/7-Benefits-That-Highlight-The-Importance-Of-Soft-Skills-In-The-Workplace.png" alt="Second slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="about me.html">
+                                <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzvV5XnC7kHa3RNAMqCc_a1W78I1evKlRBYOny4O_Jg&s" alt="Third slide">
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="journal.html">
+                                <img class="d-block w-100" src="https://www.baronnews.com/wp-content/uploads/2019/03/bulletjournal.jpg" alt="Fourth slide">
+                            </a>
+                        </div>
+                        
                     </div>
-                    <div class="carousel-item">
-                        <a href="skills.html">
-                            <img class="d-block w-100" src="https://elearningindustry.com/wp-content/uploads/2019/10/7-Benefits-That-Highlight-The-Importance-Of-Soft-Skills-In-The-Workplace.png" alt="Second slide">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="about me.html">
-                            <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFzvV5XnC7kHa3RNAMqCc_a1W78I1evKlRBYOny4O_Jg&s" alt="Third slide">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="journal.html">
-                            <img class="d-block w-100" src="https://www.baronnews.com/wp-content/uploads/2019/03/bulletjournal.jpg" alt="fourth slide">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="martial arts.html">
-                            <img class="d-block w-100" src="https://t3.ftcdn.net/jpg/05/89/61/24/360_F_589612437_CjpkeO3pyFC9AEXrmYynS0awhPajxaYt.jpg" alt="Fifth slide">
-                        </a>
-                    </div>
-                    
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
@@ -184,67 +180,67 @@ and I hope you enjoy exploring my journey!
             </div>
         </div>
     </div>
-</div>
 
-<div class="container mt-5">
-    <div class="row">
-        <div class="col-md-6 pie-chart-section"> <!-- Removed 'offset-md-3' class -->
-            <h2 class="text-center mb-4">Skills</h2>
-            <canvas id="myPieChart" width="400" height="400"></canvas>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 pie-chart-section">
+                <h2 class="text-center mb-4"></h2>
+                <canvas id="myPieChart" width="400" height="400"></canvas>
+            </div>
         </div>
     </div>
-</div>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const burgerMenu = document.querySelector('.burger-menu');
-  const menuItems = document.querySelector('.menu-items');
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const burgerMenu = document.querySelector('.burger-menu');
+            const menuItems = document.querySelector('.menu-items');
+            const introText = document.getElementById('intro-text');
+            const text = "Hello and welcome to my portfolio! I'm Numer (Ryuujin), a dedicated student passionate about Computer Science. Here, you'll find a curated collection of my work, reflecting my enthusiasm for learning, creativity, and growth. Thank you for visiting, and I hope you enjoy exploring my journey!";
+            let i = 0;
 
-  // Function to toggle menu items visibility
-  function toggleMenu() {
-    menuItems.classList.toggle('show');
-  }
+            function typeWriter() {
+                if (i < text.length) {
+                    introText.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, 50);
+                }
+            }
+            typeWriter(); // Start typing effect
 
-  // Event listener for mobile screens (burger menu click)
-  burgerMenu.addEventListener('click', toggleMenu);
+            burgerMenu.addEventListener('click', function() {
+                menuItems.classList.toggle('show');
+            });
 
-  // Event listener for desktop screens (window resize)
-  window.addEventListener('resize', function() {
-    // Check if the window width is greater than 768px (desktop)
-    if (window.innerWidth > 768) {
-      // Hide menu items
-      menuItems.classList.remove('show');
-    }
-  });
+            window.addEventListener('resize', function() {
+                if (window.innerWidth > 768) {
+                    menuItems.classList.remove('show');
+                }
+            });
 
-  // Pie chart data
-  var ctx = document.getElementById('myPieChart').getContext('2d');
-var data = {
-    labels: ['Persistence', 'Agility', 'Problem-Solving', 'Leadership', 'Time Management', 'Adaptability', 'Communication Skills', 'Creativity', 'Teamwork', 'Resilience', 'Attention to Detail', 'Financial Literacy', 'Networking', 'Negotiation', 'Technical Skills', 'Public Speaking', 'Emotional Intelligence', 'Project Management', 'Cultural Competence', 'Research Skills'],
-    datasets: [{
-        data: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], 
-        backgroundColor: ['red', 'blue', 'yellow', 'green', 'orange', 'purple', 'gray', 'cyan', 'magenta', 'pink', 'brown', 'teal', 'lime', 'indigo', 'salmon', 'olive', 'maroon', 'navy', 'azure', 'lavender'] 
-    }]
-};
+            var ctx = document.getElementById('myPieChart').getContext('2d');
+            var data = {
+                labels: ['Logical Thinking', 'Programming', 'Problem-solving', 'Kinesthetics', 'Critical Thinking', 'Adaptability', 'Flexibility', 'Emotional Intelligence', 'Kinesthetic Sense', 'Gaming Sense'],
+                datasets: [{
+                    data: [20, 25, 15, 19, 20, 35, 20, 10, 20, 15],
+                    backgroundColor: ['red', 'blue', 'yellow', 'green', 'orange', 'purple', 'gray', 'cyan', 'magenta', 'pink']
+                }]
+            };
 
-var myPieChart = new Chart(ctx, {
-    type: 'pie',
-    data: data,
-    options: {
-        responsive: true,
-        legend: {
-            position: 'right'
-        }
-    }
-});
-
-});
-</script>
-
+            var myPieChart = new Chart(ctx, {
+                type: 'pie',
+                data: data,
+                options: {
+                    responsive: true,
+                    legend: {
+                        position: 'right'
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-    
