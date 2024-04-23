@@ -38,6 +38,7 @@
         width: 100vw;
         margin: 0;
         padding: 0;
+        text-align: center; 
     }
 
     .container, .container-fluid {
@@ -47,12 +48,20 @@
         margin-left: auto;
         width: 100%; /* Ensure container is full width */
     }
+        .parallax p {
+    max-width: 80%; /* Limit paragraph width */
+    margin: 0 auto; /* Center align paragraph */
+}
+        
         .pie-chart-section {
             align-items: flex-start;
             background-color: rgba(0, 0, 0, 0.7);
             padding: 50px 20px; 
             margin-left: 20px; 
             color: aliceblue ;
+            max-width: 100%; /* Set maximum width to 100% */
+              height: auto; /* Maintain aspect ratio */
+             margin: 0 auto;
         }
         
 
